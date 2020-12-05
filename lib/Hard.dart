@@ -9,14 +9,8 @@ class Hard extends StatefulWidget {
 }
 
 class _DiceState extends State<Hard> {
-  AssetImage one = AssetImage("images/one.png");
-  AssetImage two = AssetImage("images/two.png");
-  AssetImage three = AssetImage("images/three.png");
-  AssetImage four = AssetImage("images/four.png");
-  AssetImage five = AssetImage("images/five.png");
-  AssetImage six = AssetImage("images/six.png");
+  AssetImage HomeImage1 = AssetImage("images/dice.jpg");
 
-  AssetImage HomeImage1;
 
   List<int> _selected = new List(5);
   static int i = 0;
@@ -28,16 +22,15 @@ class _DiceState extends State<Hard> {
     super.initState();
     setState(() {
       i = 0;
-      HomeImage1 = one;
     });
   }
 
   void diceChanger() async {
 
-    if (i == 6) {
+    if (i == 5) {
       int t = 0;
       int f = 0;
-      for (int j = 0; j < 6; j++) {
+      for (int j = 0; j < 5; j++) {
         if (_selected[j] == random[j]) {
           t++;
         } else {
@@ -50,7 +43,6 @@ class _DiceState extends State<Hard> {
             "Result",
             style: TextStyle(fontSize: 25.0),
           )),
-          // IF YOU WANT TO ADD
           context: context,
           firstButton: MaterialButton(
             // FIRST BUTTON IS REQUIRED
@@ -89,7 +81,7 @@ class _DiceState extends State<Hard> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Center(child: Text("Guess No: " + (i+1).toString(), style: TextStyle(
+                    Center(child: Text("Guess Dice: " + (i+1).toString(), style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
                       fontSize: 25.0,
@@ -97,8 +89,8 @@ class _DiceState extends State<Hard> {
                     SizedBox(width: 10.0,),
                     Image(
                       image: HomeImage1,
-                      width: 120.0,
-                      height: 120.0,
+                      width: 100.0,
+                      height: 100.0,
                     ),
                   ],
                 ),
@@ -125,7 +117,9 @@ class _DiceState extends State<Hard> {
                           _selected[i] = 1;
                           i++;
                         });
-
+                        if(i==5){
+                          diceChanger();
+                        }
                       },
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(30.0),
@@ -149,6 +143,9 @@ class _DiceState extends State<Hard> {
                           _selected[i] = 2;
                           i++;
                         });
+                        if(i==5){
+                          diceChanger();
+                        }
                       },
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(30.0),
@@ -172,6 +169,9 @@ class _DiceState extends State<Hard> {
                           _selected[i] = 3;
                           i++;
                         });
+                        if(i==5){
+                          diceChanger();
+                        }
                       },
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(30.0),
@@ -194,10 +194,10 @@ class _DiceState extends State<Hard> {
                           random[i] = (1 + Random().nextInt(6));
                           _selected[i] = 4;
                           i++;
-                          if(i==6){
-                            diceChanger();
-                          }
                         });
+                        if(i==5){
+                          diceChanger();
+                        }
                       },
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(30.0),
@@ -221,6 +221,9 @@ class _DiceState extends State<Hard> {
                           _selected[i] = 5;
                           i++;
                         });
+                        if(i==5){
+                          diceChanger();
+                        }
                       },
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(30.0),
@@ -244,6 +247,9 @@ class _DiceState extends State<Hard> {
                           _selected[i] = 6;
                           i++;
                         });
+                        if(i==5){
+                          diceChanger();
+                        }
                       },
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(30.0),
