@@ -22,9 +22,11 @@
 <kbd><img src="SS/s5.jpg" width="200"></kbd>
 <kbd><img src="SS/s6.jpg" width="200"></kbd>
 <kbd><img src="SS/s7.jpg" width="200"></kbd>
+<kbd><img src="SS/s8.jpg" width="200"></kbd>
 
 
-Get Idea from 
+
+our Playstore Account: 
 [`LearnHubStudio`](https://play.google.com/store/apps/dev?id=7836337206155769013) 
 
  For Upcoming Apps, Follow me 
