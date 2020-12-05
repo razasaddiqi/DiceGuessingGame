@@ -8,7 +8,7 @@ class Contactus extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         bottomNavigationBar: ContactUsBottomAppBar(
-          companyName: 'LearnHubStudio',
+          companyName: 'Umair Nawaz',
           textColor: Colors.white,
           backgroundColor: Colors.teal.shade300,
           email: 'umair.nawaz1997@gmail.com',

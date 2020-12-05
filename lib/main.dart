@@ -41,11 +41,11 @@ class _MyHomePageState extends State<MyHomePage> {
             ListTile(
               title: Text('Contact Us'),
               onTap: () {
+                Navigator.pop(context);
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Hard()),
+                  MaterialPageRoute(builder: (context) => Contactus()),
                 );
-                Navigator.pop(context);
               },
             ),
           ],
