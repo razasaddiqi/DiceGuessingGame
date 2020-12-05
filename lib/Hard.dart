@@ -1,7 +1,9 @@
+import 'package:dice_guessing_game_053/Resultpage.dart';
 import 'package:flutter/material.dart';
 import 'dart:math';
 import 'package:animated_dialog_box/animated_dialog_box.dart';
 import 'package:flutter/widgets.dart';
+import 'main.dart';
 
 class Hard extends StatefulWidget {
   @override
@@ -75,8 +77,20 @@ class _DiceState extends State<Hard> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
+              SizedBox(height: 24.0,),
               Container(
-                margin: EdgeInsets.fromLTRB(20.0, 50.0, 20.0, 0.0),
+                  alignment: Alignment.centerRight,
+                  child: IconButton(
+                    iconSize: 30.0,
+                    icon: new Icon(Icons.home,color: Colors.white,),
+                    onPressed: () {
+                      Navigator.of(context).pushReplacement(MaterialPageRoute(
+                          builder: (context) => MyHomePage()));
+                    },
+                  )
+              ),
+              Container(
+                margin: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 0.0),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -100,7 +114,7 @@ class _DiceState extends State<Hard> {
                 child: Column(
                   children: [
                     RaisedButton(
-                      padding: EdgeInsets.fromLTRB(50.0, 20.0, 50.0, 20.0),
+                      padding: EdgeInsets.fromLTRB(50.0, 10.0, 50.0, 10.0),
                       child: Text(
                         '1',
                         textAlign: TextAlign.center,
@@ -118,7 +132,9 @@ class _DiceState extends State<Hard> {
                           i++;
                         });
                         if(i==5){
-                          diceChanger();
+                          Navigator.of(context).pushReplacement(MaterialPageRoute(
+                              builder: (context) => Resultpage(selected: _selected, random: random)
+                          ));
                         }
                       },
                       shape: RoundedRectangleBorder(
@@ -126,7 +142,7 @@ class _DiceState extends State<Hard> {
                       ),
                     ),
                     RaisedButton(
-                      padding: EdgeInsets.fromLTRB(50.0, 20.0, 50.0, 20.0),
+                      padding: EdgeInsets.fromLTRB(50.0, 10.0, 50.0, 10.0),
                       child: Text(
                         '2',
                         textAlign: TextAlign.center,
@@ -144,7 +160,9 @@ class _DiceState extends State<Hard> {
                           i++;
                         });
                         if(i==5){
-                          diceChanger();
+                          Navigator.of(context).pushReplacement(MaterialPageRoute(
+                              builder: (context) => Resultpage(selected: _selected, random: random)
+                          ));
                         }
                       },
                       shape: RoundedRectangleBorder(
@@ -152,7 +170,7 @@ class _DiceState extends State<Hard> {
                       ),
                     ),
                     RaisedButton(
-                      padding: EdgeInsets.fromLTRB(50.0, 20.0, 50.0, 20.0),
+                      padding: EdgeInsets.fromLTRB(50.0, 10.0, 50.0, 10.0),
                       child: Text(
                         '3',
                         textAlign: TextAlign.center,
@@ -170,7 +188,9 @@ class _DiceState extends State<Hard> {
                           i++;
                         });
                         if(i==5){
-                          diceChanger();
+                          Navigator.of(context).pushReplacement(MaterialPageRoute(
+                              builder: (context) => Resultpage(selected: _selected, random: random)
+                          ));
                         }
                       },
                       shape: RoundedRectangleBorder(
@@ -178,7 +198,7 @@ class _DiceState extends State<Hard> {
                       ),
                     ),
                     RaisedButton(
-                      padding: EdgeInsets.fromLTRB(50.0, 20.0, 50.0, 20.0),
+                      padding: EdgeInsets.fromLTRB(50.0, 10.0, 50.0, 10.0),
                       child: Text(
                         '4',
                         textAlign: TextAlign.center,
@@ -196,7 +216,9 @@ class _DiceState extends State<Hard> {
                           i++;
                         });
                         if(i==5){
-                          diceChanger();
+                          Navigator.of(context).pushReplacement(MaterialPageRoute(
+                              builder: (context) => Resultpage(selected: _selected, random: random)
+                          ));
                         }
                       },
                       shape: RoundedRectangleBorder(
@@ -204,7 +226,7 @@ class _DiceState extends State<Hard> {
                       ),
                     ),
                     RaisedButton(
-                      padding: EdgeInsets.fromLTRB(50.0, 20.0, 50.0, 20.0),
+                      padding: EdgeInsets.fromLTRB(50.0, 10.0, 50.0, 10.0),
                       child: Text(
                         '5',
                         textAlign: TextAlign.center,
@@ -222,7 +244,9 @@ class _DiceState extends State<Hard> {
                           i++;
                         });
                         if(i==5){
-                          diceChanger();
+                          Navigator.of(context).pushReplacement(MaterialPageRoute(
+                              builder: (context) => Resultpage(selected: _selected, random: random)
+                          ));
                         }
                       },
                       shape: RoundedRectangleBorder(
@@ -230,7 +254,7 @@ class _DiceState extends State<Hard> {
                       ),
                     ),
                     RaisedButton(
-                      padding: EdgeInsets.fromLTRB(50.0, 20.0, 50.0, 20.0),
+                      padding: EdgeInsets.fromLTRB(50.0, 10.0, 50.0, 10.0),
                       child: Text(
                         '6',
                         textAlign: TextAlign.center,
@@ -248,7 +272,9 @@ class _DiceState extends State<Hard> {
                           i++;
                         });
                         if(i==5){
-                          diceChanger();
+                          Navigator.of(context).pushReplacement(MaterialPageRoute(
+                              builder: (context) => Resultpage(selected: _selected, random: random)
+                          ));
                         }
                       },
                       shape: RoundedRectangleBorder(

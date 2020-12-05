@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:math';
 import 'package:animated_dialog_box/animated_dialog_box.dart';
 import 'package:flutter/widgets.dart';
+import 'main.dart';
 
 class Simple extends StatefulWidget {
   @override
@@ -127,8 +128,20 @@ class _DiceState extends State<Simple> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
+              SizedBox(height: 24.0,),
               Container(
-                margin: EdgeInsets.fromLTRB(50.0, 100.0, 50.0, 0.0),
+                alignment: Alignment.centerRight,
+                  child: IconButton(
+                    iconSize: 40.0,
+                      icon: new Icon(Icons.home,color: Colors.white,),
+                    onPressed: () {
+                      Navigator.of(context).pushReplacement(MaterialPageRoute(
+                          builder: (context) => MyHomePage()));
+                    },
+                  )
+              ),
+              Container(
+                margin: EdgeInsets.fromLTRB(50.0, 50.0, 50.0, 0.0),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
