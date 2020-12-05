@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'Simple.dart';
+import 'Hard.dart';
 
 
 class MyHomePage extends StatefulWidget {
@@ -16,13 +18,13 @@ class _MyHomePageState extends State<MyHomePage> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
+          SizedBox(height: 20.0,),
           Expanded(
-            flex: 1,
             child: Padding(
               padding: EdgeInsets.all(10.0),
               child: Center(
                 child: Text(
-                  "Choose Level ...",
+                  "Wellcome to Dice Gussing game",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 25.0,
@@ -33,6 +35,22 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
           Expanded(
+            child: Padding(
+              padding: EdgeInsets.all(10.0),
+              child: Center(
+                child: Text(
+                  "Choose Level ...",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 20.0,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+            ),
+          ),
+          Expanded(
+            flex: 2,
             child: Padding(
               padding: EdgeInsets.all(15.0),
               child: FlatButton(
@@ -45,12 +63,16 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
                 onPressed: () {
-                  //The user picked true.
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Simple()),
+                  );
                 },
               ),
             ),
           ),
           Expanded(
+            flex: 2,
             child: Padding(
               padding: EdgeInsets.all(15.0),
               child: FlatButton(
@@ -63,7 +85,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
                 onPressed: () {
-                  //The user picked false.
+
+
                 },
               ),
             ),
