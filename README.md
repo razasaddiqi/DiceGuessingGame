@@ -1,16 +1,31 @@
-# dice_guessing_game_053
+# MyQuizApp-Flutter
+> Mobile App Development Assignment Before 2nd Sessional
 
-A new Flutter application.
 
-## Getting Started
+## Features:
 
-This project is a starting point for a Flutter application.
+* Multiple Screens
+* Start With Splash Screen.
+* Two levels
+* Guessing game and dice total Win.
+* Automaticaly move to Result After Complete.
+* Result Page (Show Score)
+* Drawer on Homepage.
+* HomeButton on All page.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## ScreenShots:
+<kbd><img src="SS/s1.jpg" width="200"></kbd>
+<kbd><img src="SS/s2.jpg" width="200"></kbd>
+<kbd><img src="SS/s3.jpg" width="200"></kbd>
+<kbd><img src="SS/s4.jpg" width="200"></kbd>
+<kbd><img src="SS/s5.jpg" width="200"></kbd>
+<kbd><img src="SS/s6.jpg" width="200"></kbd>
+<kbd><img src="SS/s7.jpg" width="200"></kbd>
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+Get Idea from 
+[`LearnHubStudio`](https://play.google.com/store/apps/dev?id=7836337206155769013) 
+
+ For Upcoming Apps, Follow me 
+[`umairnawaz333`](https://github.com/umairnawaz333) 
