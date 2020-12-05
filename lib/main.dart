@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'Simple.dart';
 import 'Hard.dart';
+import 'Contactus.dart';
 
 
 class MyHomePage extends StatefulWidget {
@@ -40,9 +41,10 @@ class _MyHomePageState extends State<MyHomePage> {
             ListTile(
               title: Text('Contact Us'),
               onTap: () {
-                // Update the state of the app
-                // ...
-                // Then close the drawer
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Hard()),
+                );
                 Navigator.pop(context);
               },
             ),
