@@ -1,5 +1,5 @@
-# MyQuizApp-Flutter
-> Mobile App Development Assignment Before 2nd Sessional
+# MDiceGuessingGame - SP17-BCS-053 UMAIR
+> Mobile App Development 2nd Sessional
 
 
 ## Features:
